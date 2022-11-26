@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+
+    <style>
+
+        body {
+
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        td, th {
+
+            border: 1px solid #181818;
+            padding: 5px;
+        }
+
+        thead th {
+
+            background-color: gray;
+            color: white;
+        }
+
+        tr.linha {
+
+            background-color: gray;
+            color: white;
+        }
+
+        td.num {
+
+            text-align: center;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <table>
+
+        <thead>
+
+            <tr>
+                <th scope="col" rowspan="2">Área</th>
+                <th scope="col" rowspan="2">Disciplinas</th>
+                <th scope="colgroup" colspan="2">Notas</th>
+                <th scope="col" rowspan="2">Média</th>
+            </tr>
+            <tr>
+                <th scope="col">Nota 1</th>
+                <th scope="col">Nota 2</th>
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <th scope="rowgroup" rowspan="4"><strong>Exatas</strong></th>
+                <td>Matemática</td>
+                <td class="num">0,0</td>
+                <td class="num">0,0</td>
+                <td class="num">0,0</td>
+            </tr>
+
+            <tr>
+                <td>Física</td>
+                <td class="num">0,0</td>
+                <td class="num">0,0</td>
+                <td class="num">0,0</td>
+            </tr>
+
+            <tr>
+                <td>Química</td>
+                <td class="num">0,0</td>
+                <td class="num">0,0</td>
+                <td class="num">0,0</td>
+            </tr>
+
+            <tr>
+                <td>Biologia</td>
+                <td class="num">0,0</td>
+                <td class="num">0,0</td>
+                <td class="num">0,0</td>
+            </tr>
+            
+            <tr class="linha">
+                <th scope="row" colspan="4"><strong>Média de Exatas</strong></th>
+                <td class="num">0,0</td>
+            </tr>
+
+            <tr>
+                <th scope="rowgroup" rowspan="2"><strong>Humanas</strong></th>
+                <td>História</td>
+                <td class="num">0,0</td>
+                <td class="num">0,0</td>
+                <td class="num">0,0</td>
+            </tr>
+
+            <tr>
+                <td>Geografia</td>
+                <td class="num">0,0</td>
+                <td class="num">0,0</td>
+                <td class="num">0,0</td>
+            </tr>
+
+            <tr class="linha">
+                <th scope="row" colspan="4"><strong>Média de Humanas</strong></th>
+                <td class="num">0,0</td>
+            </tr>
+
+        </tbody>
+    
+    </table>
+    
+</body>
+</html>
